@@ -1,0 +1,20 @@
+package in.ashokit;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class ObjectToJson {
+
+	public static void main(String[] args) {
+
+		Student s = new Student();
+		s.setfName("Raju");
+		s.setlName("Kumar");
+		
+		ObjectMapper m = new ObjectMapper();
+		m.writeValueAsString(s);
+		
+		
+		
+	}
+
+}

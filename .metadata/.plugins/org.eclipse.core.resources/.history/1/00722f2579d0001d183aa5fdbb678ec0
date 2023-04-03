@@ -1,0 +1,13 @@
+package in.ashokit;
+
+public class ObjectToJson {
+
+	public static void main(String[] args) {
+
+		Student s = new Student();
+		
+		
+		
+	}
+
+}

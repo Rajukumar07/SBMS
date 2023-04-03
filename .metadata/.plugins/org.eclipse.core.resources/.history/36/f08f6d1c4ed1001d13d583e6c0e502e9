@@ -1,0 +1,26 @@
+package in.ashokit;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+public class ObjectToXml {
+
+	public static void main(String[] args) throws JAXBException {
+		
+		
+		Student s = new Student();
+		s.setfName("Raj");
+		s.setlName("Kumar");
+		
+		JAXBContext context = JAXBContext.newInstance(Student.class);
+		
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.setProperty(marshaller.JAXB_FORMATTED_OUTPUT, true);
+		
+		marshaller.marshal(s,System.out);
+		
+
+	}
+
+}

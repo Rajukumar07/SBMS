@@ -1,0 +1,17 @@
+package in.ashokit;
+
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+
+public class XmlToObj {
+
+	public static void main(String[] args) {
+		
+		File f = new File("student.xml");
+		
+		JAXBContext context = JAXBContext.newInstance(Student.class);
+
+	}
+
+}

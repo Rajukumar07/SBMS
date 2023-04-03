@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean id="payment" class="in.ashokit.CreditCard" autowire-candidate="false"></bean>
+	<bean id="payment1" class="in.ashokit.DebitCard"></bean>
+	<bean id="paymentService" class="in.ashokit.PaymentService" autowire="byType">
+
+		<!-- using constructor injection -->
+		<!-- <constructor-arg name="payment" ref="debit"></constructor-arg>
+ -->
+		<!--using setter injection -->
+<!-- 		<property name="payment" ref="credit"></property>
+ -->	
+ </bean>
+
+</beans>

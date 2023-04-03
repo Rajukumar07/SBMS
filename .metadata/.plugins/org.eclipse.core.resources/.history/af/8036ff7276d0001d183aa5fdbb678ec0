@@ -1,0 +1,25 @@
+package in.ashokit;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Student {
+
+	private String fName;
+	private Student lName;
+	public String getfName() {
+		return fName;
+	}
+	public void setfName(String fName) {
+		this.fName = fName;
+	}
+	public Student getlName() {
+		return lName;
+	}
+	public void setlName(Student lName) {
+		this.lName = lName;
+	}
+	
+	
+	
+}
